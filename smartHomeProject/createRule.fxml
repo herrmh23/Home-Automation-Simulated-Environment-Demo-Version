@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartHomeProject.CreateRuleController">
+   <children>
+      <VBox fx:id="createRuleVBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="createRuleLabel" text="Create Rule">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="ruleNameLabel" text="Rule Name">
+               <VBox.margin>
+                  <Insets bottom="2.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="ruleNameTextField">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <Label fx:id="errorLabel" textFill="RED">
+               <font>
+                  <Font name="Comic Sans MS" size="13.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="houseRuleRadioButton" mnemonicParsing="false" text="House Rule">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+               <toggleGroup>
+                  <ToggleGroup fx:id="ruleRangeSelection" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="roomRuleRadioButton" mnemonicParsing="false" text="Room Rule" toggleGroup="$ruleRangeSelection">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </RadioButton>
+            <RadioButton fx:id="deviceRuleRadioButton" mnemonicParsing="false" text="Device Rule" toggleGroup="$ruleRangeSelection">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </RadioButton>
+            <ListView fx:id="ruleTargetSelectionListView" prefHeight="200.0" prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </ListView>
+            <Label fx:id="ruleActivationTimeLabel" text="Rule Activation Time">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="ruleActivationTimeHBox" alignment="CENTER_LEFT">
+               <children>
+                  <TextField fx:id="hoursTextField" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="36.0" promptText="Hrs">
+                     <HBox.margin>
+                        <Insets right="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Label fx:id="colonLabel" text=":" />
+                  <TextField fx:id="minutesTextField" maxWidth="1.7976931348623157E308" prefHeight="26.0" prefWidth="26.0" promptText="Min">
+                     <HBox.margin>
+                        <Insets left="3.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <RadioButton fx:id="amRadioButton" mnemonicParsing="false" selected="true" text="A.M.">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="amPM" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="pmRadioButton" mnemonicParsing="false" text="P.M." toggleGroup="$amPM">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <Label fx:id="setDevicesToLabel" text="Set Lights To">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="setDevicesToHBox" prefHeight="0.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="onRadioButton" mnemonicParsing="false" text="On">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="lightsOnOff" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="offRadioButton" mnemonicParsing="false" text="Off" toggleGroup="$lightsOnOff">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="setLockLabel" text="Set Lock">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="setLockHBox" prefHeight="0.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="lockRadioButton" mnemonicParsing="false" text="Lock">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="setLockStatus" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="unlockRadioButton" mnemonicParsing="false" text="Unlock" toggleGroup="$setLockStatus">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="HVACModeLabel" text="HVAC Mode">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <HBox fx:id="HVACRulesHBox" prefHeight="0.0" prefWidth="200.0">
+               <children>
+                  <RadioButton fx:id="headRadioButton" mnemonicParsing="false" text="Heat">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="HVACMode" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="acRadioButton" mnemonicParsing="false" text="AC" toggleGroup="$HVACMode">
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </RadioButton>
+                  <RadioButton fx:id="HVACOffRadioButton" mnemonicParsing="false" text="Off" toggleGroup="$HVACMode">
+                     <HBox.margin>
+                        <Insets left="29.0" />
+                     </HBox.margin>
+                  </RadioButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <Label fx:id="HVACTemperatureLabel" text="HVAC Temperature">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="HVACTempTextField" promptText="60º - 85º">
+               <VBox.margin>
+                  <Insets top="2.0" />
+               </VBox.margin>
+            </TextField>
+            <Button fx:id="createRuleButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Create Rule">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="closeButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Close">
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

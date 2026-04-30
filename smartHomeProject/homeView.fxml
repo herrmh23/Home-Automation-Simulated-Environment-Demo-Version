@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane prefHeight="400.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="smartHomeProject.HomeViewController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Pane fx:id="landPane" style="-fx-background-color: Darkgreen;" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0" />
+            <StackPane fx:id="houseContainer" AnchorPane.bottomAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20">
+               <children>
+                  <Group fx:id="houseGroup">
+                     <children>
+                        <Pane fx:id="room1Pane" layoutX="50.0">
+                           <children>
+                              <Rectangle fx:id="room1Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="250.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b381f2" height="86.0" layoutX="117.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b381f2" height="86.0" layoutX="133.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b381f2" height="20.0" layoutX="114.0" layoutY="106.0" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b381f2" height="20.0" layoutX="114.0" layoutY="180.0" stroke="BLACK" strokeType="INSIDE" width="36.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c5501" height="75.0" layoutX="3.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" width="24.0" />
+                              <Line endX="100.00000762939453" endY="-19.49737548828125" layoutX="-85.0" layoutY="213.0" startX="100.0" startY="-101.59685516357422" strokeWidth="3.0" />
+                              <Line endX="7.109375" endY="1.52587890625E-5" layoutX="15.0" layoutY="131.0" startX="-8.314712524414062" startY="1.52587890625E-5" />
+                              <Line endX="7.109375" endY="1.52587890625E-5" layoutX="15.0" layoutY="176.0" startX="-8.314712524414062" startY="1.52587890625E-5" />
+                              <Ellipse fill="#540000" layoutX="75.0" layoutY="152.0" radiusX="37.0" radiusY="80.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Ellipse fill="#830101" layoutX="75.0" layoutY="154.0" radiusX="32.0" radiusY="68.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                              <Ellipse fill="#6b0101" layoutX="75.0" layoutY="157.0" radiusX="26.0" radiusY="54.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                              <Circle fx:id="light1" fill="#9e9e9e" layoutX="75.0" layoutY="59.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light4" fill="#9e9e9e" layoutX="77.0" layoutY="153.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Rectangle fx:id="hvac1" arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="21.0" layoutX="35.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part" width="79.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Rectangle>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="room2Pane" layoutX="200.0">
+                           <children>
+                              <Rectangle fx:id="room2Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="200.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#97723b" height="200.0" layoutX="208.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                              <Ellipse fill="WHITE" layoutX="229.0" layoutY="159.0" radiusX="12.0" radiusY="21.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Line endX="32.99998474121094" layoutX="213.0" layoutY="159.0" rotate="180.0" startX="20.28106689453125" strokeWidth="2.0" />
+                              <Line endX="13.686447143554688" endY="-5.29547119140625" layoutX="229.0" layoutY="169.0" rotate="180.0" startX="13.686447143554688" startY="5.96905517578125" strokeWidth="2.0" />
+                              <Line endX="13.686447143554688" endY="-5.29547119140625" layoutX="229.0" layoutY="149.0" rotate="180.0" startX="13.686447143554688" startY="5.96905517578125" strokeWidth="2.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#464646" height="58.0" layoutX="207.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="45.0" />
+                              <Ellipse layoutX="217.0" layoutY="43.0" radiusX="7.0" radiusY="7.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Ellipse layoutX="238.0" layoutY="43.0" radiusX="7.0" radiusY="7.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Ellipse layoutX="238.0" layoutY="71.0" radiusX="7.0" radiusY="7.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Ellipse layoutX="217.0" layoutY="71.0" radiusX="7.0" radiusY="7.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Line endX="9.0" layoutX="199.0" layoutY="43.0" startX="5.2618408203125" />
+                              <Line endX="9.0" layoutX="199.0" layoutY="71.0" startX="5.2618408203125" />
+                              <Line endX="-100.0" endY="84.7623062133789" layoutX="304.0" layoutY="-7.0" startX="-100.0" startY="44.09745407104492" />
+                              <Circle fx:id="light3" fill="#9e9e9e" layoutX="141.0" layoutY="58.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light6" fill="#9e9e9e" layoutX="141.0" layoutY="149.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light2" fill="#9e9e9e" layoutX="42.0" layoutY="58.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e3f00" height="30.0" layoutX="67.0" layoutY="166.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e3f00" height="30.0" layoutX="20.0" layoutY="115.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e3f00" height="30.0" layoutX="65.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e3f00" height="30.0" layoutX="19.0" layoutY="167.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c5501" height="95.0" layoutX="33.0" layoutY="110.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Circle fx:id="light5" fill="#9e9e9e" layoutX="43.0" layoutY="149.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="room4Pane" layoutY="250.0">
+                           <children>
+                              <Rectangle fx:id="room4Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="200.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#8ec3f5" height="85.0" layoutY="65.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="21.0" layoutX="8.0" layoutY="121.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c5501" height="30.0" layoutX="65.0" layoutY="117.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Circle fx:id="light13" fill="#9e9e9e" layoutX="80.0" layoutY="132.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light10" fill="#9e9e9e" layoutX="100.0" layoutY="75.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Rectangle fx:id="hvac2" arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="21.0" layoutX="115.0" layoutY="126.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part" width="79.0">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Rectangle>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="Room3Pane" layoutX="200.0" layoutY="200.0">
+                           <children>
+                              <Rectangle fx:id="room3Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="50.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="250.0" />
+                              <Circle fx:id="light7" fill="#9e9e9e" layoutX="29.0" layoutY="25.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light8" fill="#9e9e9e" layoutX="125.0" layoutY="25.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light9" fill="#9e9e9e" layoutX="211.0" layoutY="25.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                           </children>
+                        </Pane>
+                        <Pane fx:id="room5Pane" layoutX="200.0" layoutY="250.0">
+                           <children>
+                              <Rectangle fx:id="room5Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="100.0" />
+                              <Ellipse fill="WHITE" layoutX="65.0" layoutY="125.0" radiusX="15.0" radiusY="18.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f5f5f5" height="21.0" layoutX="40.0" layoutY="125.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c5501" height="64.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Ellipse fill="WHITE" layoutX="15.0" layoutY="32.0" radiusX="10.0" radiusY="15.0" stroke="BLACK" strokeType="INSIDE" />
+                              <Circle fx:id="light11" fill="#9e9e9e" layoutX="50.0" layoutY="75.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Line endX="32.99998474121094" layoutX="-18.0" layoutY="32.0" startX="20.28106689453125" strokeWidth="2.0" />
+                              <Line endX="13.686447143554688" endY="-5.29547119140625" layoutX="-8.0" layoutY="42.0" startX="13.686447143554688" startY="5.96905517578125" strokeWidth="2.0" />
+                              <Line endX="13.686447143554688" endY="-5.29547119140625" layoutX="-8.0" layoutY="22.0" startX="13.686447143554688" startY="5.96905517578125" strokeWidth="2.0" />
+                           </children>
+                        </Pane>
+                        <Pane fx:id="room6Pane" layoutX="300.0" layoutY="250.0" prefHeight="150.0">
+                           <children>
+                              <Rectangle fx:id="room6Rectangle" arcHeight="5.0" arcWidth="5.0" fill="#dddddd" height="150.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="150.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#f58e8e" height="85.0" layoutX="83.0" stroke="BLACK" strokeType="INSIDE" width="65.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="21.0" layoutX="91.0" layoutY="4.0" stroke="BLACK" strokeType="INSIDE" width="50.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#5e3f00" height="30.0" layoutX="38.0" layoutY="92.0" stroke="BLACK" strokeType="INSIDE" width="30.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#7c5501" height="43.0" layoutY="107.0" stroke="BLACK" strokeType="INSIDE" width="106.0" />
+                              <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="30.0" layoutX="43.0" layoutY="114.0" stroke="BLACK" strokeType="INSIDE" width="20.0" />
+                              <Line endX="33.5" layoutX="41.0" layoutY="119.0" startX="22.5" startY="14.0" stroke="#f6ff00" strokeWidth="2.0" />
+                              <Circle fx:id="light12" fill="#9e9e9e" layoutX="62.0" layoutY="74.0" radius="15.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Circle fx:id="light14" fill="#9e9e9e" layoutX="14.0" layoutY="129.0" radius="10.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></Circle>
+                              <Text layoutX="44.0" layoutY="120.0" rotate="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="In the beginning God created the heavens and the earth. 2 Now the earth was formless and empty, darkness was over the surface of the deep, and the Spirit of God was hovering over the waters.3 And God said, “Let there be light,” and there was light. 4 God saw that the light was good, and he separated the light from the darkness. 5 God called the light “day,” and the darkness he called “night.” And there was evening, and there was morning—the first day.6 And God said, “Let there be a vault between the waters to separate water from water.” 7 So God made the vault and separated the water under the vault from the water above it. And it was so. 8 God called the vault “sky.” And there was evening, and there was morning—the second day." wrappingWidth="17.241978610868955">
+                                 <font>
+                                    <Font size="1.0" />
+                                 </font>
+                              </Text>
+                              <Polygon fill="#ffd883" layoutX="68.0" layoutY="139.0" points="-7.29998779296875, -2.600006103515625, -4.29998779296875, -4.585784912109375, -5.914215087890625, -6.0" stroke="#ffd883" strokeType="INSIDE" strokeWidth="0.0" />
+                              <Polygon layoutX="78.0" layoutY="149.0" points="-16.758026123046875, -14.399993896484375, -16.758026123046875, -12.600006103515625, -17.29998779296875, -12.600006103515625" stroke="#ffd883" strokeType="INSIDE" strokeWidth="0.0" />
+                              <Line endX="-0.078369140625" endY="-0.8238525390625" layoutX="76.0" layoutY="118.0" startX="-2.049163818359375" startY="1.6396484375" stroke="#007c1f" strokeWidth="2.0" />
+                              <Line endX="-1.100006103515625" endY="1.399993896484375" layoutX="77.0" layoutY="116.0" rotate="45.0" startX="-1.100006103515625" startY="1.399993896484375" stroke="#ff8e8e" strokeWidth="2.0" />
+                           </children>
+                        </Pane>
+                        <Line endX="150.0" endY="250.0" startY="250.0" strokeWidth="6.0" />
+                        <Line endX="450.0" endY="400.0" startX="450.0" strokeWidth="6.0" />
+                        <Line endX="200.0" endY="400.0" startX="200.0" startY="250.0" strokeWidth="6.0" />
+                        <Line endX="450.0" endY="400.0" startY="400.0" strokeWidth="6.0" />
+                        <Line endX="300.0" endY="400.0" startX="300.0" startY="250.0" strokeWidth="6.0" />
+                        <Line endX="450.0" startX="50.0" strokeWidth="6.0" />
+                        <Line endX="50.0" endY="250.0" startX="50.0" startY="100.0" strokeWidth="6.0" />
+                        <Line endX="50.0" endY="50.0" startX="50.0" strokeWidth="6.0" />
+                        <Line endX="450.0" endY="200.0" startX="200.0" startY="200.0" strokeWidth="6.0" />
+                        <Line endX="350.0" endY="250.0" startX="450.0" startY="250.0" strokeWidth="6.0" />
+                        <Line endY="400.0" startY="250.0" strokeWidth="6.0" />
+                        <Line endX="200.0" endY="250.0" startX="250.0" startY="250.0" strokeWidth="6.0" />
+                        <Line endX="50.0" endY="100.0" startX="50.0" startY="50.0" stroke="#964b00" strokeWidth="6.0" />
+                        <Line endX="150.0" endY="250.0" startX="194.0" startY="250.0" stroke="#964b00" strokeWidth="6.0" />
+                        <Line endX="294.0" endY="250.0" startX="250.0" startY="250.0" stroke="#964b00" strokeWidth="6.0" />
+                        <Line endX="350.0" endY="250.0" startX="306.0" startY="250.0" stroke="#964b00" strokeWidth="6.0" />
+                        <Line endX="200.0" endY="100.0" startX="200.0" startY="200.0" strokeWidth="6.0" />
+                       <Group fx:id="lock1Parts">
+                        <Ellipse fx:id="lockElipse1" fill="#9e9e9e" layoutX="51.0" layoutY="78.0" radiusX="8.0" radiusY="12.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part" />
+                        <Ellipse fill="WHITE" layoutX="51.0" layoutY="78.0" radiusX="6.0" radiusY="9.0" stroke="BLACK" strokeType="INSIDE" />
+                        <Rectangle fx:id="lockSquare1" arcHeight="5.0" arcWidth="5.0" fill="#9e9e9e" height="19.0" layoutX="41.0" layoutY="75.0" stroke="BLACK" strokeType="INSIDE" styleClass="device-part" width="19.0" />
+                       </Group>
+                        <Circle fx:id="lock1" fill="#ffffff00" layoutX="51.0" layoutY="81.0" radius="16.0" stroke="TRANSPARENT" strokeType="INSIDE" strokeWidth="0.0">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Circle>
+                     </children>
+                  </Group>
+               </children>
+            </StackPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
