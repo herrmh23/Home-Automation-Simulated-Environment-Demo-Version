@@ -7,3 +7,8 @@ The demo version of this project is meant to be used to show off the features of
 3. The demo verion uses the main to prelaod a rooms, devices, and a rule
 
 When deploying this application, note that JavaFX 25.0 was used to build the front end. The name of the main is "SmartHomeProject.java"
+
+The following link will take you to a YouTube video of my final project presentation in which I demonstrate the use of the system. The video demonstrates the full version, but system functionality is the same.
+https://youtu.be/d5PyKl1sfyA
+
+If you would like to access the full version, access my GitHub page and find the repository titles "Home-Automation-Simulated-Environment"
